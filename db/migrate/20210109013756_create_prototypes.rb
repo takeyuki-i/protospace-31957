@@ -5,7 +5,6 @@ class CreatePrototypes < ActiveRecord::Migration[6.0]
       t.text :catch_copy
       t.text :concept
       t.references :user, foreign_key: true
-      t.has_one_attached :image
       t.timestamps
     end
   end
